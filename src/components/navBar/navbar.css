@@ -1,0 +1,116 @@
+.navbar-container{
+    height: 88px;
+    max-width: 1344px;
+    margin: auto;
+}
+
+.navbar-contents{
+    padding: 30px 20px;
+    display: flex;
+}
+
+/* Navbar logo */
+
+.navbar-logo{
+    width: 128px;
+    margin-right: 23px;
+}
+
+/* Navbar headers */
+
+.navbar-headers{
+    width: 1192px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-headers div{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar-headers p{
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+
+.navbar-headers div p:hover{
+    cursor: pointer;
+}
+
+.navbar-headers-tracking-stats,.navbar-headers-login{
+    display: flex;
+}
+
+.navbar-headers-login > div span{
+    font-weight: 450;
+}
+
+.navbar-headers-login > img{
+    margin-right: 5px;
+}
+
+.navbar-header-remove{
+    margin-right: 24px;
+}
+
+.navbar-headers-tracking-stats > div:first-child{
+    margin-right: 24px;
+    color: #305367;
+}
+
+.toggle-btn{
+    display: none;     
+}
+
+/* Mobile responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .navbar-headers{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        transform: translateY(-100vh);
+        text-align: center;
+    }
+
+    .responsive-nav{
+        transform: none;
+    }
+
+    .toggle-btn{
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 30px;
+    }
+
+    .navbar-header-remove{
+        display: none;
+    }
+
+    .navbar-headers-login{
+        display: block;
+    }
+
+    .navbar-headers-login p{
+        padding: 12px;
+    }
+
+    .navbar-headers-tracking-stats{
+        display: block;
+    }
+
+    .navbar-headers-tracking-stats p{
+        margin-top: 13px;
+    }
+
+    .navbar-headers-tracking-stats > div:first-child{
+        margin-right: 0px;
+    }
+}

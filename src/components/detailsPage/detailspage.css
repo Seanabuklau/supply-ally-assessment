@@ -1,0 +1,24 @@
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.body{
+    flex: auto;
+    background-color: #f5f7f9;
+}
+
+.body-wrapper{
+    margin: 50px 0 100px;
+}
+
+@media only screen and (max-width: 768px){
+    .body-wrapper{
+        margin: 50px 0 50px;
+    }
+}
+
+.bottom{
+    bottom: 2vh;
+}

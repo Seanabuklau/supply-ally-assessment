@@ -1,0 +1,159 @@
+:root{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.stats-container{
+    max-width: 888px;
+    min-height: 721px;
+    margin: auto;
+}
+
+/* Stats Header Stuff */
+.stats-header-container{
+    text-align: center;
+}
+
+.stats-header-container p{
+    margin-bottom: 0;
+}
+
+.stats-header-row.top{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.stats-header-row.middle{
+    margin-top: 40px;
+    margin-bottom: 22px;
+}
+
+.stats-header-row.middle > p:nth-child(2){
+    font-size: 56px;
+    font-weight: 700;
+    height: 60px;
+    margin-top: 0;
+}
+
+
+.stats-header-row.bottom{
+    margin-bottom: 42px;
+    font-weight: 700;
+}
+
+.stats-header-date{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: auto;
+}
+
+.stats-header-date p{
+    margin-top: 0;
+}
+
+.stats-header-date > img{
+    margin-top: 3px;
+}
+
+/* Stats History Stuff */
+
+.stats-history-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}   
+
+.stats-history-record{
+    display: flex;
+}
+
+.stats-history-record > div{
+    width: 444px;
+    height: 56px;
+}
+
+.stats-history-record.header{
+    font-weight: 700;
+}
+
+.stats-history-record.data.top{
+    border-top: 1px solid #e0e0e0; 
+}
+
+.stats-history-record.data{
+    border-top: 1px solid #eceff3; 
+}
+
+.stats-history-record p{
+    margin: 18px 0 18px 16px;
+}
+
+/* Button section */
+
+.stats-button-container > div{
+    float: right;
+    margin-top: 40px;
+}
+
+.stats-button-container button{
+    font-weight: 700;
+    border-radius: 3px;
+    width: 86px;
+    height: 48px;
+    color: white;
+    background-color: #305367;
+    border: 2px solid #305367;
+}
+
+.stats-button-container button:hover{
+    cursor: pointer;
+}
+
+/* Progressive alignment */
+
+@media only screen and (max-width: 992px){
+    .stats-container{
+        max-width: 720px;
+    }  
+}
+
+@media only screen and (max-width: 768px){
+    .stats-container{
+        max-width: 550px;
+    }    
+}
+
+@media only screen and (max-width: 600px){
+    /* Detail card */
+    .stats-container{
+        max-width: 450px;
+    }  
+    /* Buttons */ 
+    .stats-button-container button{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    /* Detail card */
+    .stats-container{
+        max-width: 343px;
+        min-height: 800px;
+    } 
+
+    /* Row */
+    .stats-history-record > div{
+        width: 140px;
+        height: 72px;
+    }
+    .stats-history-record > div:first-child p{
+        margin: 26px 0 26px 16px;
+    }
+    .stats-history-record > div:last-child p{
+        margin: 12px 16px;
+    }
+    
+    /* Buttons */ 
+    .stats-button-container button{
+        width: 343px;
+    }
+}

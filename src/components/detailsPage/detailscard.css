@@ -1,0 +1,224 @@
+:root{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Details Card Section*/
+
+.details-card{
+    background-color: rgb(255, 255, 255);
+    max-width: 888px;
+    height: 550px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: -1px 5px 9px -2px rgba(0,0,0,0.52);
+    -webkit-box-shadow: -1px 5px 9px -2px rgba(0,0,0,0.52);
+    -moz-box-shadow: -1px 5px 9px -2px rgba(0,0,0,0.52);
+}
+
+.details-card-contents{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Section Details*/
+
+/* Tracking ID Section*/
+
+.tracking-id-section{
+    height: 72px;
+    background-color: #305367;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.tracking-id{
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 16px;
+    left: 24px;
+}
+
+.tracking-id > img{
+    margin-right: 12px;
+}
+
+.tracking-id > div > p{
+    margin: 0;
+    color: white;
+}
+
+.tracking-id > div > p:first-child{
+    height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.tracking-id > div > p:last-child{
+    height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Tracking Details Section*/
+
+.tracking-details-section{
+    height: 460px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+
+.tracking-details-wrapper{
+    min-height: 328px;
+    max-width: 840px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.tracking-details{
+    width: 840px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tracking-details > div:nth-child(2){
+    margin: 32px 0;
+}
+
+.tracking-details > div p{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.tracking-details-time-status{
+    display: flex;
+    min-height: 24px;
+}
+
+.tracking-details-time-status > p:first-child{
+    font-weight: 400;
+    margin-right: 24px;
+    margin-bottom: 0;
+}
+
+.tracking-details-time-status > p:last-child{
+    font-weight: 400;
+    width: 211px;
+    margin-bottom: 0;
+}
+
+/* Details Checkbox Section*/
+
+.details-checkbox{
+    margin: 40px;
+}
+
+.details-checkbox > div {
+    margin: auto;
+    max-width: 888px;
+}
+
+.details-checkbox > div > div{
+    display: flex;
+}
+
+.details-checkbox input{
+    margin-top: 4px;
+    width: 18px;
+    height: 18px;
+}
+
+.details-checkbox p{
+    margin: 0 0 0 16px;
+    font-size: 16px;
+}
+
+/* Details Buttons Section */
+
+.details-buttons > div{
+    margin: auto;
+    max-width: 888px;
+} 
+
+.details-buttons > div > div{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.details-buttons button{
+    font-weight: 700;
+    border-radius: 3px;
+    width: 103px;
+    height: 48px;
+}
+
+.details-buttons button:hover{
+    cursor: pointer;
+}
+
+.details-buttons button:first-child{
+    color: #305367;
+    border: 2px solid #305367;
+}
+
+.details-buttons button:last-child{
+    color: white;
+    background-color: #305367;
+    border: 2px solid #305367;
+}
+
+/* Progressive alignment */
+
+@media only screen and (max-width: 992px){
+    .details-card{
+        max-width: 720px;
+    } 
+    .details-checkbox > div{
+        max-width: 720px;
+    }
+    .details-buttons > div{
+        max-width: 720px;
+    }   
+}
+
+@media only screen and (max-width: 768px){
+    .details-card{
+        max-width: 550px;
+    } 
+    .details-checkbox > div{
+        max-width: 550px;
+    }
+    .details-buttons > div{
+        max-width: 550px;
+    }   
+}
+
+@media only screen and (max-width: 550px){
+    /* Detail card */
+    .details-card{
+        max-width: 343px;
+    }
+    .details-checkbox > div{
+        max-width: 343px;
+    }
+    /* Buttons */
+    .details-buttons > div{
+        max-width: 343px;
+    }  
+    .details-buttons > div > div{
+        display: flex;
+        flex-direction: column;
+    } 
+    .details-buttons button:first-child{
+        width: 343px;
+        margin-bottom: 16px;;
+    }
+    .details-buttons button:last-child{
+        width: 343px;
+    }
+}
