@@ -17,6 +17,7 @@ Note that most of the dynamic content i.e. tracking details shown are hardcoded 
 Some sanity checks were added to the frontend of the web application. For instance, buttons such as *Login* are disabled by default unless the user correctly inputs a name in alphabetical letters.  
 This ensures only names are accepted as the login input. Moreover, warning statments are also added to inform users of incorrect inputs, for example typing in less than *10* numbers for the tracking number will trigger an error message. 
 ## 6. **Tests**
+Tests were conducted using the JavaScript Jest library.  
 Unix testing was carried out on important components and pages of the web application. However, only a handful of the test cases passed.  
 A bulk of the failure was attributed to the following errors:  
 -  ```useNavigate() may be used only in the context of a <Router> component``` as a result of making use of the ```useNavigate()``` hook to route to different pages.  
