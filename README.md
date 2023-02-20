@@ -35,7 +35,8 @@ This project is hosted on GitHub and can be accessed by clicking on the URL belo
 2. Ensure the codes are saved into a projects directory
 3. Open the folder in an IDE i.e. VS Code. Ensure the terminal points to the right projects folder
 4. To start the project in a development environment, type ```npm install``` in the terminal to install the required dependencies
-5. Once done, type ```npm start``` to run the project
+5. Remove the ```homepage``` property in ```package.json``` so images in the public folder can be rendered in dev mode
+6. Once done, type ```npm start``` to run the project
 ## 9. **How to Use**
 The project is still in the development stage at the moment, so it can only be run for viewing/testing purposes.   
 ## 10. **Contributors**
