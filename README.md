@@ -4,7 +4,8 @@ This project is a web based frontend application for Supply Company to support i
 ## 2. **Motivation**
 This project was built as part of GovTech GDS' Web Application Technical Assessment.
 ## 3. **Build Status**
-As of current, only the frontend of the web application for 4 screens i.e. Login, Track, Tracking Details, and Statistics are done up.  
+Currently, only the frontend for 4 screens i.e. Login, Track, Tracking Details, and Statistics are done up.  
+
 Note that most of the dynamic content i.e. tracking details shown are hardcoded and not rendered via an API call to the backend. 
 ## 4. **Tech Stack**
 1. Frontend framework: 
@@ -16,8 +17,10 @@ Note that most of the dynamic content i.e. tracking details shown are hardcoded 
 ## 5. **Extra Features**
 Some sanity checks were added to the frontend of the web application. For instance, buttons such as *Login* are disabled by default unless the user correctly inputs a name in alphabetical letters.  
 
-This ensures only names are accepted as the login input. Moreover, warning statments are also added to inform users of incorrect inputs, for example typing in less than *10* numbers for the tracking number will trigger an error message. 
+This ensures only names are accepted as the login input. Moreover, warning statments are also added to inform users of incorrect inputs, for example typing in less than *10* digits for the tracking number will trigger an error message. 
 ## 6. **Tests**
+The library used for testing was Jest.  
+
 Unix testing was carried out on important components and pages of the web application. However, only a handful of the test cases passed.  
 
 A bulk of the failure was attributed to the following errors:  
