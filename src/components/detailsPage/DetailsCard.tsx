@@ -5,10 +5,19 @@ import { useNavigate } from "react-router-dom";
 const DetailsCard: React.FC = () =>{
 
 const navigate = useNavigate();
+
 const [status, setStatus] = useState<boolean>(false)
 
 const handleChange:(e:React.ChangeEvent<HTMLInputElement>)=>void = (e) => {
     setStatus(e.target.checked);
+  }
+
+const handleSubmit:(e:React.MouseEvent<HTMLElement>) => void = (e)=>{
+    if(status===true){
+        navigate("/stats")
+    }else{
+        alert("Please mark checkbox to proceed") 
+    }
   }
 
 return (
@@ -65,7 +74,7 @@ return (
         <div>
             <div>
                 <button onClick={() => navigate("/track")}>Back</button>
-                <button onClick={() => navigate("/stats")} disabled={!status}>Submit</button>
+                <button onClick={handleSubmit}>Submit</button>
             </div>
         </div>
     </div>
